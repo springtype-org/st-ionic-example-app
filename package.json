@@ -1,0 +1,22 @@
+{
+  "name": "st-ionic-example-app",
+  "version": "2.0.0-alpha.1",
+  "description": "Showcase App using Ionic 4 and SpringType",
+  "scripts": {
+    "clean": "npx st-rm-rf dist node_modules",
+    "start:prod": "cross-env NODE_ENV=production st-start",
+    "start": "cross-env NODE_ENV=development st-start"
+  },
+  "author": "Aron Homberg <info@aron-homberg.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "typescript": "^3.5.1",
+    "st-start": "^2.0.0-alpha.13"
+  },
+  "dependencies": {
+    "@ionic/core": "^4.11.2",
+    "springtype": "2.0.0-alpha.1.14",
+    "st-ionic": "2.0.0-alpha.1"
+  }
+}
