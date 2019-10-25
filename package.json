@@ -12,11 +12,11 @@
   "devDependencies": {
     "cross-env": "^6.0.3",
     "typescript": "^3.5.1",
+    "st-ionic": "2.0.0-alpha.1",
     "st-start": "^2.0.0-alpha.13"
   },
   "dependencies": {
     "@ionic/core": "^4.11.2",
-    "springtype": "2.0.0-alpha.1.14",
-    "st-ionic": "2.0.0-alpha.1"
+    "springtype": "2.0.0-alpha.1.14"
   }
 }
