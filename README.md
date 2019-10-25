@@ -4,7 +4,7 @@
 
 A simple example App to demonstrate how easy it is to use Ionic 4 with SpringType.
 
-![Screenshot](https://github.com/springtype-org/st-ionic-example-app/blob/master/ionic4-integration-example-app.png?raw=true)
+<img src="https://github.com/springtype-org/st-ionic-example-app/blob/master/ionic4-integration-example-app.png?raw=true" width="200">
 
 ### Install and Run
 
