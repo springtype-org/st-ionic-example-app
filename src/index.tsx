@@ -1,14 +1,14 @@
 import { st } from "springtype/core";
-import { customElement } from "springtype/web/customelement";
-import { ILifecycle } from "springtype/web/customelement/interface";
+import { component } from "springtype/web/component";
+import { ILifecycle } from "springtype/web/component/interface";
 import { css } from "springtype/web/tss";
 import { domRef, tsx } from "springtype/web/vdom";
 import "st-ionic";
 import "./theme";
 import { AppTheme } from "./theme";
 
-@customElement()
-export class IonicApp extends st.element implements ILifecycle {
+@component()
+export class IonicApp extends st.component implements ILifecycle {
   // DOM ref binding for controllers and such
   @domRef("actionSheetController")
   actionSheetController!: HTMLIonActionSheetControllerElement;
