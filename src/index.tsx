@@ -1,16 +1,16 @@
 import { st } from "springtype/core";
 import { component } from "springtype/web/component";
 import { ILifecycle } from "springtype/web/component/interface";
-import { css } from "springtype/web/tss";
-import { domRef, tsx } from "springtype/web/vdom";
+import  { tsx } from "springtype/web/vdom";
+import  { ref } from "springtype/core/ref";
 import "st-ionic";
-import "./theme";
-import { AppTheme } from "./theme";
+import "./theme.scss";
 
-@component()
+@component
 export class IonicApp extends st.component implements ILifecycle {
+
   // DOM ref binding for controllers and such
-  @domRef("actionSheetController")
+  @ref
   actionSheetController!: HTMLIonActionSheetControllerElement;
 
   onIonButtonClick = async () => {
@@ -130,29 +130,6 @@ export class IonicApp extends st.component implements ILifecycle {
       </ion-app>
     );
   }
-
-  // Theming and styling
-  // https://ionicframework.com/docs/theming/css-variables
-  renderStyle = (theme: AppTheme) => css`
-    :root {
-      /* set SpringType color */
-      --ion-color-primary: ${theme.primary.base};
-      --ion-color-primary-shade: ${theme.primary.shade};
-      --ion-color-primary-tint: ${theme.primary.tint};
-
-      /* Set the background of the entire app */
-      --ion-background-color: #fff;
-
-      /* Set the font family of the entire app */
-      --ion-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-        "Roboto", sans-serif;
-    }
-
-    // specific Ionic component styles
-    ion-button {
-      --color: #fff;
-    }
-  `;
 }
 
 // render the app

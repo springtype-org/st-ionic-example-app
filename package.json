@@ -10,14 +10,29 @@
   "author": "Aron Homberg <info@aron-homberg.de>",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^9.7.1",
     "cross-env": "^6.0.3",
-    "typescript": "^3.6.4",
+    "dts-css-modules-loader": "^1.0.1",
+    "lost": "^8.3.1",
+    "node-notifier": "^6.0.0",
+    "node-sass": "^4.13.0",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.2",
+    "postcss-normalize": "^8.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-safe-parser": "^4.0.1",
+    "raw-loader": "^3.1.0",
+    "resolve-url-loader": "^3.1.0",
+    "sass-loader": "^8.0.0",
     "st-ionic": "2.0.0-alpha.1",
-    "st-start": "^2.0.0-alpha.21",
-    "st-run": "2.0.0-alpha.6"
+    "st-run": "2.0.0-alpha.31",
+    "st-start": "^2.0.0-beta.30",
+    "typescript": "^3.6.4",
+    "webpack-bundle-analyzer": "^3.6.0"
   },
   "dependencies": {
     "@ionic/core": "^4.11.2",
-    "springtype": "2.0.0-alpha.1.16"
+    "springtype": "springtype@2.0.0-beta.23"
   }
 }
